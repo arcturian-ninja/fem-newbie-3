@@ -1,0 +1,92 @@
+/* Border box declaration 
+https://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+html {
+    box-sizing: border-box;
+  }
+  /* inherit border-box on all elements in the universe and before and after
+   */
+  *, 
+  *:before, 
+  *:after {
+    box-sizing: inherit;
+  }
+  
+body{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-weight: 400;
+}
+.wrapper{
+    background-color: hsl(257, 40%, 49%);
+    background-image:  url('../images/bg-mobile.svg');
+    background-repeat:  no-repeat ;
+    padding: 30px;
+}
+main{
+    text-align: center;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+h1{
+    font-size: 1.5em;
+}
+header img{
+    width: 40%;
+    padding: 0 3px;
+}
+.illustration img{
+    width: 100%;
+    padding: 50px 0;
+}
+button{
+    border: none;
+    border-radius: 50px;
+    background-color: #fff;
+    color: hsl(257, 40%, 49%);
+    padding: 10px;
+    width: 60%;
+}
+footer{
+    padding-top:40px;
+    text-align: center;
+}
+
+@media only screen and (min-width:480px){
+    .wrapper{
+        background-image: url('../images/bg-desktop.svg');
+        background-size: contain;
+        width: 90%;
+        padding: 30px 50px;
+        margin: auto;
+    }
+    header img{
+        width: 20%;
+        padding: 0 3px;
+    }
+    .illustration img{
+        width: 60%;
+        padding: 50px 20px 0 0;
+        float: left;
+    }
+    .clear{
+        clear: left;
+    }
+    h1{
+        padding: 100px 10px 30px 10px;
+        font-size: 2em;
+    }
+    button{
+        width: 15%;
+        font-size: 0.9em;
+        padding: 15px;
+    }
+    main{
+        text-align: unset;
+    }
+    footer{
+        width: 100%;
+        text-align: right;
+    }
+}
