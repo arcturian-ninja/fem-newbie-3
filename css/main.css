@@ -56,7 +56,7 @@ footer{
 @media only screen and (min-width:480px){
     .wrapper{
         background-image: url('../images/bg-desktop.svg');
-        background-size: contain;
+        background-size: 90% 90%;
         width: 90%;
         padding: 30px 50px;
         margin: auto;
